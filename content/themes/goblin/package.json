@@ -1,11 +1,11 @@
 {
-  	"name": "Goblin",
+  	"name": "Vive",
   	"version": "1.1.0",
-  	"description": "A minimalist and content-focused theme for Ghost",
-  	"url": "http://previews.sunflowertheme.com/ghost/goblin",
+  	"description": "Vive's Cake Boutique's Theme. Inspired by Goblin",
+  	"url": "http://www.vive.hk",
   	"author": {
-	    "name": "sunflowertheme",
-	    "email": "support@sunflowertheme.com",
-	    "url": "http://www.sunflowertheme.com"
+	    "name": "ViveCakes",
+	    "email": "vivecakes@gmail.com",
+	    "url": "http://www.vive.hk"
 	}	
 }

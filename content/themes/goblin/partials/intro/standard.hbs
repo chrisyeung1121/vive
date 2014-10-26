@@ -4,14 +4,14 @@
 	<div class="intro-wrap">
 		<div class="intro-text">
 			<div class="welcome-text style1">
-				<div class="line1">Hi There,</div>
-				<div class="line2">Welcome to {{@blog.title}}!</div>
-				<div class="line3">{{@blog.description}}.</div>
+				{{#if @blog.logo}}<img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+				<div class="line2">{{@blog.title}}</div>
+				<div class="line3">{{@blog.description}}</div>
 			</div>
-			{{>social-icons}}
+			{{!-- {{>social-icons}} --}}
 		</div>
 	</div>
-	<div class="more-detail">
+	{{!-- <div class="more-detail">
 		<div class="scrollDown">
 			<span class="mouseBorder"></span>
 		    <span class="mouseWheel"></span>
@@ -19,5 +19,5 @@
 		<a class="start" href="#start">
 			Discover Now
 		</a>
-	</div>
+	</div> --}}
 </div>
