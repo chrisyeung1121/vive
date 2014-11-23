@@ -121,7 +121,7 @@ iframe {
 /*******************************/
 .artee-site-head {
   background: rgba(255, 255, 255, 0.9);
-  border-top: 0.325rem solid #FBF6F0;
+  border-top: 0.325rem solid #F4D5D8;
   padding-top: 3.125rem;
   padding-bottom: 4.375rem;
   color: #252525;
@@ -283,7 +283,13 @@ iframe {
               width: auto;
               height: auto; }
               .artee-site-head .artee-blog-menu ul li a:hover {
-                border-bottom: 0.1875rem solid #252525; } }
+                -webkit-transition: all .2s;
+                -ms-transition: all .2s;
+                -moz-transition: all .2s;
+                -o-transition: all .2s;
+                transition: all .2s;
+                color: #D3A5A5;
+                border-bottom: 0.1875rem solid #F4D5D8; } }
 
 /**********************************/
 /* artee index site content styles */
