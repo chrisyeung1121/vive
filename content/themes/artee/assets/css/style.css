@@ -730,6 +730,8 @@ iframe {
 
 .portfolio-block {
   margin: 1em auto 1.5em;
+  display: block;
+  float: left;
 }
 
 .portfolio-block h3 {
