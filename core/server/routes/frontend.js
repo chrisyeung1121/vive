@@ -36,6 +36,12 @@ frontendRoutes = function () {
         res.redirect(301, subdir + '/rss/');
     });
 
+    // Custom Static Pages
+    router.get('/blog', function(req, res, next) {
+        res.render('page-blog');
+    });
+
+
     // Tags
     router.get('/tag/:slug/rss/', frontend.rss);
     router.get('/tag/:slug/rss/:page/', frontend.rss);
