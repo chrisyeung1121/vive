@@ -15,7 +15,7 @@ body.tag-template,
 body.author-template {
   background-image: none !important;
   background-color: #fff;
-  border: 0.625rem solid #252525;
+  /*border: 0.625rem solid #252525;*/
   border-top: 0; }
 
 /*******************************/

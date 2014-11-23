@@ -58,19 +58,19 @@
 			<div class="artee-index-post-container">
 				{{! index article section post header }}
 				<header class="artee-index-post-header">
-					<div class="artee-index-post-meta"><i class="fa fa-calendar"></i> <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></div>
+					<div class="artee-index-post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></div>
 					<h3 class="artee-index-post-title"><a href="{{url}}">{{{title}}}</a></h3>
 				</header>
 				{{! index article section post header end }}
 
 				{{! index article section post excerpt }}
 				<section class="artee-index-post-excerpt">
-					<p>{{excerpt characters='120'}}&hellip;</p>
+					<p>{{excerpt characters='60'}}&hellip;</p>
 					{{!-- author url with author image --}}
 					{{#if author}}
-						<div class="artee-index-author">
+				{{!-- 		<div class="artee-index-author">
 							<img src="{{author.image}}" class="artee-index-author-image" alt="{{author.name}}"> {{author}}
-						</div>
+						</div> --}}
 					{{/if}}
 					{{#if tags}}
 						<hr>
@@ -89,10 +89,12 @@
 	{{! index article section end }}
 
 	{{!! index pagination section - After all the posts, we have the previous/next pagination links }}
-	{{pagination}}
+	{{!-- {{pagination}} --}}
 	<div class="row">
 		<div class="small-12 text-center">
-			<button class="artee-load-more">Load more articles</button>
+			<a href="/blog">
+				<button style="background-color: white; color: #262626; ">Enter Blog</button>
+			</a>
 		</div>
 	</div>
 	{{! index pagination section end }}
