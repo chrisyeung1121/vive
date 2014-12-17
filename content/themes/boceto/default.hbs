@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html class="ie7 ie" xmlns:fb="http://ogp.me/ns/fb#"><![endif]-->  
+<!--[if IE 8]><html class="ie8 ie" xmlns:fb="http://ogp.me/ns/fb#"><![endif]-->  
+<!--[if IE 9]><html class="ie9 ie" xmlns:fb="http://ogp.me/ns/fb#"><![endif]-->  
+<!--[if !IE]><!--><html xmlns:fb="http://ogp.me/ns/fb#"><!--<![endif]-->  
+<head>
+{{! Document Settings }}
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+{{! Page Meta }}
+<title>{{meta_title}}</title>
+<meta name="description" content="{{meta_description}}" />
+
+{{! Mobile Support }}
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+{{! Styles'n'Scripts }}
+<link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+<link rel="stylesheet" type="text/css" href="{{asset "css/animate.min.css"}}">
+<link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}">
+<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}">
+<link rel="stylesheet" type="text/css" href="{{asset "css/responsive.css"}}">
+<link rel="stylesheet" type="text/css" href="{{asset "css/magnific-popup.css"}}">
+<link rel="stylesheet" type="text/css" href="{{asset "css/prettify-bootstrap.css"}}">
+{{! Main Color }}
+<link rel="stylesheet" type="text/css" href="{{asset "css/main-color.css"}}">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+{{ghost_head}}
+
+</head>
+<body class="enable_animations {{body_class}}" {{#if @blog.cover}}style="background: url({{@blog.cover}}) top center fixed;"{{/if}}>
+
+	<!-- start: #wrapper -->
+	<div id="wrapper" class="center">
+
+		{{> header}}
+		
+        {{{body}}}
+		
+		<div class="clear"></div>
+				
+    </div>
+    <!-- end: #wrapper -->
+	
+	{{> footer}}
+	
+    {{ghost_foot}}
+
+	<script type="text/javascript" src="{{asset "js/jquery.isotope.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+	<script type="text/javascript" src="{{asset "js/jquery.magnific-popup.min.js"}}"></script>
+	<script type="text/javascript" src="{{asset "js/google-code-prettify/prettify.js"}}"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="{{asset "js/global.js"}}"></script>
+</body>
+</html>

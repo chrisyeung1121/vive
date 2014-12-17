@@ -1,0 +1,96 @@
+/* @group Main Colors */
+
+/*
+Background solid color
+Default: #fff
+*/
+
+body{
+	background-color: #fff;	
+}
+
+/*
+Main Text Color
+Color scheme: Dark (little lighter than primary color)
+Default: #444
+*/
+
+body,
+.post-content{
+	color: #444;	
+}
+
+/*
+Primary Color
+Color scheme: Dark
+Default: #333
+*/
+
+a:hover,
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+#header nav ul li a,
+div.home div.articles article a.readmore:hover,
+.pagination a,
+.post-content a:hover,
+.post-content h1, .post-content h2, .post-content h3,
+.post-content h4, .post-content h5, .post-content h6,
+nav.mobile-nav ul li a{
+	color: #333;	
+}
+
+div.single article header div.meta:after,
+h3.title:after,
+#back-to-top{
+	background: #333;	
+}
+
+div.home div.articles article a.readmore:hover{
+	border-color: #333;
+}
+
+#footer div.social ul li a{
+	border-color: transparent transparent #333 transparent;
+}
+
+#footer div.social ul li a:after{
+	border-color: #333 transparent transparent transparent;
+}
+
+/*
+Secondary color
+Color scheme: Light
+Default: #F3EFF3
+*/
+
+a,
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+div.home div.articles article a.readmore,
+.pagination a:hover,
+div.page div.meta i.fa,
+.post-content a,
+nav.mobile-nav h3,
+div#gallery a i.fa{
+	color: #CCC3BD;	
+}
+
+#header nav ul li a:after,
+#back-to-top:hover{
+	background: #F3EFF3;
+}
+
+div.home div.articles article a.readmore{
+	border-color: #CCC3BD;
+}
+
+div.border div.decoration,
+#footer div.social ul li a:hover{
+	border-color: transparent transparent #CCC3BD transparent;
+}
+
+div.border div.decoration:after,
+#footer div.social ul li a:hover:after{
+	border-color: #CCC3BD transparent transparent transparent;
+}
+
+/* @end */

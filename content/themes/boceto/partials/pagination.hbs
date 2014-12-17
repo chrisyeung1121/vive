@@ -1,0 +1,10 @@
+<nav class="pagination" role="navigation">
+	<div class="nav">
+		{{#if next}}
+			<a class="older-posts" href="{{pageUrl next}}"><i class="fa fa-chevron-left"></i> OLDER POSTS</a>
+		{{/if}}
+		{{#if prev}}
+			<a class="newer-posts" href="{{pageUrl prev}}">NEWER POSTS <i class="fa fa-chevron-right"></i></a>
+		{{/if}}
+	</div>
+</nav>

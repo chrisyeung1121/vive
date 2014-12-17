@@ -1,0 +1,60 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+<main class="content" role="main">
+	<!-- start: .author-page -->
+	<div class="author-page home">
+		{{#author}}
+			<!-- start: .author -->
+			<section class="author box {{#if image}}with-avatar{{else}}no-avatar{{/if}}">
+				<h3 class="title">Articles by: {{name}}</h3>
+				{{#if image}}
+					<div class="avatar"><img src="{{image}}"></div>
+				{{/if}}
+				<h4>{{name}}</h4>
+				<p>{{bio}}</p>
+				{{#if website}}
+					<p>Follow me in <a href="{{website}}">{{website}}</a></p>
+				{{/if}}
+				<div class="clear"></div>
+			</section>
+			<!-- end: .author -->
+		{{/author}}
+		
+		<!-- start: .articles-->
+		<div class="articles loading">
+			{{#foreach posts columns=3}}
+			
+				<article class="item opacity0 {{post_class}} {{#if @rowEnd}}ep-last{{/if}}">
+					<div class="main-image">
+						{{content characters="0"}}
+					</div>
+					<div class="overlay">
+						<p class="tags">
+							<span>{{tags}}</span>
+						</p>
+						<a href="{{url}}" class="readmore"><i class="fa fa-arrows-alt"></i></a>
+						<header>
+							<h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
+							<time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
+						</header>
+					</div>
+					<div class="clear"></div>
+				</article>
+				
+			{{/foreach}}
+			<div class="clear"></div>
+		</div>
+		<!-- end: .articles -->
+		
+		<div class="border">
+			<div class="decoration"></div>
+		</div>
+		
+		{{pagination}}
+		
+	</div>
+	<!-- end: .author-page -->
+</main>

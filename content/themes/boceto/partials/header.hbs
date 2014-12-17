@@ -1,0 +1,54 @@
+<!-- start: #header -->
+<header id="header" role="banner">
+
+	{{#if @blog.logo}}
+		<h1 class="logo" ><a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a></h1>
+	{{else}}
+		<h1 class="logo"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+	{{/if}}
+
+	<!-- start: .main-nav -->
+	<nav class="main-nav" role="navigation">
+		<ul>
+			<li><a href="{{@blog.url}}/artist">ARTIST</a></li>
+			<li><a href="{{@blog.url}}/portfolio">PORTFOLIO</a></li>
+			<li><a href="{{@blog.url}}/blog">BLOG</a></li>
+			<li><a href="{{@blog.url}}/the-boutique">THE BOUTIQUE</a></li>
+			<li><a href="{{@blog.url}}/contact">CONTACT</a></li>
+		</ul>
+	</nav>
+	<!-- end: .main-nav -->
+	
+
+	
+	<!-- start: .main-nav -->
+	<nav class="main-nav" role="navigation">
+		<ul>
+
+		</ul>
+	</nav>
+	<!-- end: .main-nav -->
+				
+	<div class="clear"></div>
+	
+</header>
+<!-- end: #header -->
+
+<div class="border">
+	<div class="decoration"></div>
+</div>
+
+<!-- start: .mobile-nav -->
+<nav class="mobile-nav" role="navigation">
+	<h3>Open Menu</h3>
+	<ul>
+		<li><a href="{{@blog.url}}/artist">ARTIST</a></li>
+		<li><a href="{{@blog.url}}/portfolio">PORTFOLIO</a></li>
+		<li><a href="{{@blog.url}}/blog">BLOG</a></li>
+		<li><a href="{{@blog.url}}/the-boutique">THE BOUTIQUE</a></li>
+		<li><a href="{{@blog.url}}/contact">CONTACT</a></li>
+	</ul>
+</nav>
+<!-- end: .mobile-nav -->
+
+<div class="border mobile"></div>

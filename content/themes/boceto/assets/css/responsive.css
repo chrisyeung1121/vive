@@ -1,0 +1,120 @@
+/* CSS Document */
+
+/* All Mobile Devices */
+
+@media screen and (max-width: 959px){
+	
+	/* @group Global Styles */
+	
+	body{ min-width: inherit; }
+	.center{ width: auto; margin: 0 5%; }
+	.mobile{ display: block; }
+	.desktop{ display: none; }
+	
+	/* @end */	
+	
+	/* @group Mobile Nav Effect */
+	
+	nav.mobile-nav{
+		display: block;
+		margin: 25px 0;
+		text-align: center;
+	}
+	nav.mobile-nav h3{
+		font-size: 16px;
+		font-weight: bold;
+		color: #F3EFF3;
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+	nav.mobile-nav ul{ display: none; }
+	nav.mobile-nav ul li{ margin-top: 25px; }
+	nav.mobile-nav ul li a{ font: bold 16px 'Didot', 'Oswald'; color: #333; }
+	 
+	/* @end */
+	
+	/* @group Header */
+	
+	#header h1.logo{ float: none; width: auto; }
+	#header h1.logo a img{ max-width: 100%; height: auto; }
+	#header nav{ display: none; }
+	
+	/* @end */
+	
+	/* @group Single */
+	
+	div.single .post-content, div.single section.box, div.author-page section.box{ width: auto; }
+	
+	/* @end */
+	
+	
+	/* @group Google Map Integration */
+	
+	div.map{ width: auto; margin: 0; }
+	
+	/* @end */
+
+}
+
+/* Tablets */
+
+@media screen and (min-width: 768px) and (max-width: 959px){
+	
+	/* @group Home */
+	
+	div.home div.articles article{ width: 48%; margin-right: 2% !important; margin-bottom: 2%; }
+	div.home div.articles article:nth-of-type(even){ margin-right: 0 !important; }
+	
+	/* @end */
+	
+}
+
+/* SmartPhones and small tablets */
+
+@media screen and (max-width: 767px){
+	
+	/* @group Global Styles */
+	
+	.center{ margin: 0 2.5%; }
+	main.content{ margin-top: 20px; }
+	#wrapper{ padding: 0 20px; }
+		
+	/* @end */
+	
+	/* @group Header */
+	
+	#header{ position: relative; padding: 25px 0; }
+	#header h1.logo a{ font-size: 30px; }
+	#header h1.logo a img{ max-width: 70%; }
+	
+	/* @end */
+	
+	/* @group Home */
+	
+	div.home div.articles article{ width: 100%; overflow: hidden; float: none; margin: 0 0 20px 0 !important; }
+	
+	/* @end */
+	
+	/* @group Single Post */
+	
+	div.single .post-content{ margin-top: 20px; font-size: 14px; }
+	section.author{  text-align: center; }
+	section.author div.avatar{ float: none; width: auto; margin: 0 0 15px; }
+	section.author div.avatar img{ max-width: 70%; width: auto; height: auto; }
+	
+	/* @end */
+	
+	/* @group Contact */
+	
+	div.map div#map_canvas{ height: 200px; }
+	
+	/* @end */
+	
+	/* @group Footer */
+	
+	#footer{ padding: 20px 0; margin: 30px 0 15px; }
+	
+	/* @end */
+	
+	
+}
