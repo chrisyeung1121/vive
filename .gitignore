@@ -1,4 +1,6 @@
 /node_modules
 npm-debug.log
-/content/images
+/content/images/*
+!/content/images/static
 /content/data/ghost-dev.db
+/content/data/ghost.db
