@@ -880,8 +880,21 @@ div#gallery a:hover:before{
 /* @Custom Style - Index */
 
 div.main-grid article{
-	background-color: #F9F9F9;
+	background-color: #FDFDFD;
 	display: inline-block;
 	width: 33.3333%;
+	text-align: center;
 	font-size: 18px;
+	padding-bottom: 15px;
+}
+
+div.main-grid article h3 {
+	text-align: center;
+	padding: 15px 0;
+}
+
+div.main-grid article.border { 
+	box-shadow: inset -1px 0px 0px #F0EDEA;
+	-webkit-box-shadow: inset -1px 0px 0px #F0EDEA;
+	-moz-box-shadow: inset -1px 0px 0px #F0EDEA;
 }
