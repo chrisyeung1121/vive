@@ -135,7 +135,8 @@ hr{ border: 0; border-top: 1px solid #ddd; height: 1px; }
 	background: #F3EFF3;		
 }
 .mobile{ display: none; }
-main.content{ position: relative; background: #fff; /*margin-top: 60px;*/ padding-bottom: 45px; }
+main.content{ position: relative; background: #fff; margin-top: 60px; padding-bottom: 45px; }
+main.content.home{ margin-top: 0px;}
 .center{ display: block; width: 900px; padding: 0; margin: 0 auto; }
 .overflow{ overflow: hidden; }
 p.tags{ font-size: 12px; padding-top: 5px; }
