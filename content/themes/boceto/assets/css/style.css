@@ -368,7 +368,7 @@ form p{ padding-bottom: 15px; font-size: 12px; }
 
 /* @group Header */
 
-#header{ text-align: center; padding: 50px 0 35px; position: relative; }
+#header{ text-align: center; padding: 50px 0 0px; position: relative; }
 #header h1.logo{ /*float: left; width: 400px; text-align: center;*/ }
 #header h1.logo a{ font: 32px 'Didot', 'Oswald'; text-transform: uppercase; }
 #header h1.logo a:hover img{
@@ -377,7 +377,7 @@ form p{ padding-bottom: 15px; font-size: 12px; }
 	opacity: 0.8;	
 }
 #header nav{ /*width: 250px;*/ float: left; text-align: center; width: 100%; margin: 0 auto;}
-#header nav ul{ margin-top: 45px; }
+#header nav ul{ margin-top: 25px; }
 #header nav ul li{ display: inline; padding: 0 25px; }
 #header nav ul li a{
 	display: inline-block;

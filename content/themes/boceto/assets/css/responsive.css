@@ -29,7 +29,7 @@
 	}
 	nav.mobile-nav ul{ display: none; }
 	nav.mobile-nav ul li{ margin-top: 25px; }
-	nav.mobile-nav ul li a{ font: bold 16px 'Didot', 'Oswald'; color: #333; }
+	nav.mobile-nav ul li a{ font: 16px 'Didot', 'Oswald'; color: #333; }
 	 
 	/* @end */
 	
