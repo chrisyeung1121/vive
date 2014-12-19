@@ -62,10 +62,12 @@ div.clear100{ height: 100px; }
 body{
 	font: 18px 'Dosis', sans-serif;
 	color: #444;
-	-webkit-background-size: cover !important;
-	-moz-background-size: cover !important;
-	-o-background-size: cover !important;
-	background-size: cover !important;
+	/*	-webkit-background-size: cover !important;
+		-moz-background-size: cover !important;
+		-o-background-size: cover !important;
+		background-size: cover !important;
+	*/
+	
 }
 h1, h2, h3, h4, h5, h6{ font-family: 'Didot', 'Oswald'; color: #333; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{ color: #333; }
