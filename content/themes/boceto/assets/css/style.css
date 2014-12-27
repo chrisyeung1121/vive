@@ -421,7 +421,7 @@ form p{ padding-bottom: 15px; font-size: 12px; }
 div.home div.articles{ margin-bottom: 45px; }
 div.home div.articles.loading{ background: url(../images/loader.gif) no-repeat center center; height: 200px !important; overflow: hidden;  }
 div.home div.articles article{
-	width: 280px;
+	width: 190px;
 	position: relative;	
 	float: left;
 	margin: 0 20px 20px 0;
@@ -435,7 +435,7 @@ div.home div.articles article{
 	-o-transition: opacity 400ms ease;
 	transition: opacity 400ms ease;
 }
-div.home div.articles article.no-thumb{ height: 280px; }
+div.home div.articles article.no-thumb{ height: 190px; }
 div.home div.articles article div.main-image img{
 	display: block;
 	width: 100%;

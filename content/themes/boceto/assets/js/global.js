@@ -11,6 +11,7 @@
 		var $container = $('div.home div.articles');
 		$container.isotope({
 			layoutMode: 'masonry',
+			columnWidth: 180,
 			itemSelector: 'article.item'
 		});
 		$container.removeClass('loading');
