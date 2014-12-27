@@ -7,38 +7,12 @@
 	<!-- start: .home -->
 	<div class="home">
 
-		{{!-- <div class="hero" style="width: 100%; background-color: #FAFAFA; height: 320px; border-bottom: 1px solid #F0EDEA; background-image: url('content/images/static/kel3100.jpg'); background-size: cover;">
-		</div> --}}
-
-		{{!-- <div class="main-grid" style=" width: 100%; font-size: 0; border-bottom: 1px solid #F0EDEA;">
-			<a href="/wedding">
-				<article class="border">
-					<div class="main-image">
-						<h3>Wedding Consultation</h3>
-						<img src="content/images/static/wedding-photo.jpg" alt="">
-					</div>
-				</article>
-			</a>
-			<a href="/workshops">
-				<article class="border">
-					<div class="main-image">
-						<h3>Workshops and Classes</h3>
-						<img src="content/images/static/workshop-photo.jpg" alt="">
-					</div>
-				</article>
-			</a>
-			<a href="party-venue">
-				<article>
-					<div class="main-image">
-						<h3>Party Venue</h3>
-						<img src="content/images/static/party-photo.jpg" alt="">
-					</div>
-				</article>
-			</a>
-		</div> --}}
+		<section class="post-content">
+			{{content}}
+		</section>
 
 		<!-- start: .articles-->
-		<div class="articles loading" style="padding: 20px;">
+		{{!-- <div class="articles loading" style="padding: 20px;">
 			{{#foreach posts columns=3}}
 			
 				<article class="item opacity0 {{post_class}} {{#if @rowEnd}}ep-last{{/if}}">
@@ -60,7 +34,7 @@
 				
 			{{/foreach}}
 			<div class="clear"></div>
-		</div>
+		</div> --}}
 		<!-- end: .articles -->
 		
 		<div class="border">
