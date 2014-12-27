@@ -631,6 +631,13 @@ div.single article img[alt=main-image]{ display: none; }
 div.single section.box{ margin: 45px auto 45px; width: 680px; }
 div.single section.box div.border{ margin-bottom: 45px; }
 
+img[alt=list-thumb] {
+	background-size: cover;
+	height: 180px;
+	width: 180px;
+	overflow: hidden;
+}
+
 /* Author */
 
 section.author div.avatar{ width: 120px; float: left; margin-right: 20px; }
