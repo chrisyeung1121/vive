@@ -1,64 +1,74 @@
 {{!< default}}
 
-{{! This is a page template. A page outputs content just like any other post, and has all the same
-    attributes by default, but you can also customise it to behave differently if you prefer. }}
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
 
-<main class="content" role="main">
+<main class="content home" role="main">
+	<!-- start: .home -->
+	<div class="home">
 
-	<div class="page single">
-	
-		<article class="{{post_class}}">
-			{{! Everything inside the #post tags pulls data from the post }}
-			{{#post}}
+		{{!-- <div class="hero" style="width: 100%; background-color: #FAFAFA; height: 320px; border-bottom: 1px solid #F0EDEA; background-image: url('content/images/static/kel3100.jpg'); background-size: cover;">
+		</div> --}}
+
+		{{!-- <div class="main-grid" style=" width: 100%; font-size: 0; border-bottom: 1px solid #F0EDEA;">
+			<a href="/wedding">
+				<article class="border">
+					<div class="main-image">
+						<h3>Wedding Consultation</h3>
+						<img src="content/images/static/wedding-photo.jpg" alt="">
+					</div>
+				</article>
+			</a>
+			<a href="/workshops">
+				<article class="border">
+					<div class="main-image">
+						<h3>Workshops and Classes</h3>
+						<img src="content/images/static/workshop-photo.jpg" alt="">
+					</div>
+				</article>
+			</a>
+			<a href="party-venue">
+				<article>
+					<div class="main-image">
+						<h3>Party Venue</h3>
+						<img src="content/images/static/party-photo.jpg" alt="">
+					</div>
+				</article>
+			</a>
+		</div> --}}
+
+		<!-- start: .articles-->
+		<div class="articles loading" style="padding: 20px;">
+			{{#foreach posts columns=3}}
+			
+				<article class="item opacity0 {{post_class}} {{#if @rowEnd}}ep-last{{/if}}">
+					<div class="main-image">
+						{{content characters="0"}}
+					</div>
+					<div class="overlay">
+						<p class="tags">
+							<span>{{tags}}</span>
+						</p>
+						<a href="{{url}}" class="readmore"><i class="fa fa-arrows-alt"></i></a>
+						<header>
+							<h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
+							<time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
+						</header>
+					</div>
+					<div class="clear"></div>
+				</article>
 				
-{{!-- 				<header>
-					<div class="main-image"></div>
-					<h2>{{{title}}}</h2>
-					<div class="meta"></div>
-				</header> --}}
-				
-				<section class="post-content">
-					<!-- start: .articles-->
-						<div class="articles loading" style="padding: 20px;">
-							{{#foreach posts columns=3}}
-							
-								<article class="item opacity0 {{post_class}} {{#if @rowEnd}}ep-last{{/if}}">
-									<div class="main-image">
-										{{content characters="0"}}
-									</div>
-									<div class="overlay">
-										<p class="tags">
-											<span>{{tags}}</span>
-										</p>
-										<a href="{{url}}" class="readmore"><i class="fa fa-arrows-alt"></i></a>
-										<header>
-											<h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
-											<time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
-										</header>
-									</div>
-									<div class="clear"></div>
-								</article>
-								
-							{{/foreach}}
-							<div class="clear"></div>
-						</div>
-						<!-- end: .articles -->
-				</section>
-	
-			{{/post}}
-	
-		</article>
+			{{/foreach}}
+			<div class="clear"></div>
+		</div>
+		<!-- end: .articles -->
 		
 		<div class="border">
 			<div class="decoration"></div>
 		</div>
 		
-		<div class="pagination">
-			<div class="nav">
-				<a class="older-posts" href="{{@blog.url}}"><i class="fa fa-chevron-left"></i> RETURN TO HOME</a>
-			</div>
-		</div>
+		{{pagination}}
 		
 	</div>
-
+	<!-- end: .home -->
 </main>
